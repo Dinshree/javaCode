@@ -1,0 +1,121 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1> fruit </h1>
+    <h2>
+    <p class="frts"> Apple </p>
+    <p class="frts"> banana </p>
+    <p class="frts">Mango </p>
+    <p class="frts"> graphs </p>
+    </h2>
+
+<button onclick="click()"> Click here</button>
+
+<script>
+    function click(){
+
+        let fruits = document.getElementsByClassName('frts');
+
+        for(let i=0;i<fruits.length;i++) {
+            fruits[i].style.backgroundColor= 'black';
+            fruits[i].style.color = 'white';
+        }
+    }
+    </script>
+*****************************************************************************************************************************************************
+     <h1>Item List</h1>
+    <h1>
+    <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+        <p class="item">Item 3</p>
+</h1>
+<button onclick="Changable()">click here</button>
+<script>
+    function Changable(){
+       let items =  document.getElementsByClassName('item');
+       for(let i=0;i<items.length ;i++){
+        items[i].style.backgroundColor = 'red';
+        items[i].style.color = 'white';
+       }
+    }
+    </script> 
+</body>
+</html>-->
+<!--****************************************************************************************************************************-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">fruits</h1>
+    <button onclick="click()" >click here</button>
+    <script>
+function click () {
+  let Click =  document.getElementById("#head");
+  Click.textcontent="hello world";
+ for(let i=0;i<Click.lenght;i++);
+  Click[i].style.backgroundcolor ='red';
+
+}
+    </script>
+</body>
+</html> 
+
+*****************************************************************************************-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head"> DOM Manipulations</h1>
+<p class="para"> this ia a paragraph</p>
+<button onclick="changecomntent()">clickhere</button>
+<script>
+    function changecomntent(){
+        let C = document.querySelector('#head');
+        C.innerHTML = "DOM Manipulations is fun!";
+         let m = document.querySelector('.para');
+    }m.innerHTML = " the content has been changed successfully!";
+</script>
+</body>
+</html> 
+
+*****************************************************************************************************************************-->
+//querySelector
+
+Create an NEW Element : 
+
+
+
+    <h1>....DOM....</h1>
+    <ul id="item-list">
+        <li>item</li>
+        </ul>
+<button onclick="addItem()">click here </button>
+<script>
+    function addItem() {
+        let newItem =  document.createElement("li");
+        newItem.textContent = 'New Item';
+        let list = document.getElementById("item-list");
+        list.appendChild(newItem);  
+    }
+    </script>
+
+
+
+
+
+
+
+
